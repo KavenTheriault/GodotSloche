@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://ez1vt15s9ifss"]
+
+[ext_resource type="Texture2D" uid="uid://yzaiu0n5iiitq" path="res://bodies/627/1-622.png" id="1_bbi4r"]
+[ext_resource type="Texture2D" uid="uid://ee6a61j6wqqkq" path="res://bodies/627/2-624_shirt.png" id="2_vi8za"]
+[ext_resource type="Shader" uid="uid://fdhwac6h0wkxf" path="res://shaders/change_color.gdshader" id="3_am6gv"]
+[ext_resource type="Texture2D" uid="uid://m6j3vsd1bm8ks" path="res://bodies/627/4-625.png" id="4_ifxgb"]
+[ext_resource type="Texture2D" uid="uid://043vut16enr72" path="res://bodies/627/5-603.png" id="5_29a2c"]
+[ext_resource type="Texture2D" uid="uid://nnfwfiwxvka48" path="res://bodies/627/9-626.png" id="6_kgtlr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_reftx"]
+shader = ExtResource("3_am6gv")
+shader_parameter/color = Vector4(0.3, 0.79, 0.94, 1)
+
+[node name="627" type="Node2D" ]
+
+[node name="1-622" type="Sprite2D" parent="."]
+position = Vector2(-69.0, -61.8)
+texture = ExtResource("1_bbi4r")
+
+[node name="2-624_shirt" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_reftx")
+position = Vector2(-2.1, -75.1)
+texture = ExtResource("2_vi8za")
+
+[node name="4-625" type="Sprite2D" parent="."]
+position = Vector2(-1.7, -83.0)
+texture = ExtResource("4_ifxgb")
+
+[node name="5-603" type="Sprite2D" parent="."]
+position = Vector2(5.4, -172.2)
+texture = ExtResource("5_29a2c")
+
+[node name="9-626" type="Sprite2D" parent="."]
+position = Vector2(77.0, -61.6)
+texture = ExtResource("6_kgtlr")
+

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://r8w0evk3rbdvt"]
+
+[ext_resource type="Texture2D" uid="uid://86n0ap7qq0tui" path="res://bodies/900/1-899.png" id="1_3bt4l"]
+[ext_resource type="Texture2D" uid="uid://9cf0tosdho7lk" path="res://bodies/900/2-603.png" id="2_gwuz8"]
+
+[node name="900" type="Node2D" ]
+
+[node name="1-899" type="Sprite2D" parent="."]
+position = Vector2(1.2, -89.0)
+texture = ExtResource("1_3bt4l")
+
+[node name="2-603" type="Sprite2D" parent="."]
+position = Vector2(-5.6, -178.8)
+texture = ExtResource("2_gwuz8")
+

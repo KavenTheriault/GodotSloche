@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://phosuqv4r5f1z"]
+
+[ext_resource type="Texture2D" uid="uid://q9glgpt0nr7ou" path="res://heads/829/1-826_hair_tete.png" id="1_x52w0"]
+[ext_resource type="Shader" uid="uid://7k0t4apnyramk" path="res://shaders/change_color.gdshader" id="2_th06v"]
+[ext_resource type="Texture2D" uid="uid://b4ya9ujueeqd2" path="res://heads/829/3-827_tete.png" id="3_98s5u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tz4xe"]
+shader = ExtResource("2_th06v")
+shader_parameter/color = Vector4(0.3, 0.79, 0.94, 1)
+
+[sub_resource type="Animation" id="Animation_lxnxg"]
+resource_name = "generated"
+length = 0.35000000000000003
+loop_mode = 1
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1-828_tete:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(0.0000, 0.0000), Vector2(0.0000, 1.8000), Vector2(0.0000, 3.4000), Vector2(0.0000, 5.2000), Vector2(0.0000, 6.8000), Vector2(0.0000, 8.6000), Vector2(0.0000, 10.2000), Vector2(0.0000, 12.0000), Vector2(0.0000, 10.2000), Vector2(0.0000, 8.6000), Vector2(0.0000, 6.8000), Vector2(0.0000, 5.2000), Vector2(0.0000, 3.4000), Vector2(0.0000, 1.8000), Vector2(0.0000, 0.0000)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1-828_tete:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000), Vector2(1.0000, 1.0000)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1-828_tete:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000, -0.0000]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvhli"]
+_data = { "generated": SubResource("Animation_lxnxg") }
+
+[node name="829" type="Node2D" ]
+
+[node name="1-828_tete" type="Node2D" parent="."]
+position = Vector2(0.0, 0.0)
+
+[node name="1-826_hair_tete" type="Sprite2D" parent="1-828_tete"]
+material = SubResource("ShaderMaterial_tz4xe")
+position = Vector2(8.3, -132.2)
+texture = ExtResource("1_x52w0")
+
+[node name="3-827_tete" type="Sprite2D" parent="1-828_tete"]
+position = Vector2(-16.8, -92.8)
+texture = ExtResource("3_98s5u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = { "": SubResource("AnimationLibrary_fvhli") }
+

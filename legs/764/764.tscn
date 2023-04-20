@@ -1,0 +1,142 @@
+[gd_scene load_steps=16 format=3 uid="uid://o2e4k21kzupab"]
+
+[ext_resource type="Texture2D" uid="uid://fxro54xf6r3d9" path="res://legs/764/1-759_pant_leg2.png" id="1_7x4g0"]
+[ext_resource type="Shader" uid="uid://7c9rxlb4laiwf" path="res://shaders/change_color.gdshader" id="2_dmw7q"]
+[ext_resource type="Texture2D" uid="uid://vu3wcf97i5grg" path="res://legs/764/3-760_leg2.png" id="3_faa9x"]
+[ext_resource type="Texture2D" uid="uid://lsz52029bk00e" path="res://legs/764/6-762.png" id="4_pelhg"]
+[ext_resource type="Texture2D" uid="uid://uia0ex82aeu11" path="res://legs/764/1-759_pant_leg1.png" id="5_r027o"]
+[ext_resource type="Shader" uid="uid://td8f3h1mk61jc" path="res://shaders/change_color.gdshader" id="6_vbs86"]
+[ext_resource type="Texture2D" uid="uid://ndrrcapnfjr6h" path="res://legs/764/3-760_leg1.png" id="7_2864j"]
+[ext_resource type="Texture2D" uid="uid://c8sjivhzq4cqd" path="res://legs/764/11-763.png" id="8_w5bl3"]
+[ext_resource type="Texture2D" uid="uid://6max8822tc4de" path="res://legs/764/12-51.png" id="9_yohsb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5h9ds"]
+shader = ExtResource("2_dmw7q")
+shader_parameter/color = Vector4(0.3, 0.79, 0.94, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dg7y1"]
+shader = ExtResource("6_vbs86")
+shader_parameter/color = Vector4(0.3, 0.79, 0.94, 1)
+
+[sub_resource type="Animation" id="Animation_h5bcc"]
+resource_name = "generated"
+length = 0.7250000000000001
+loop_mode = 1
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1-761_leg2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(0.0000, 0.0000), Vector2(2.2000, 0.0000), Vector2(3.8000, -0.6000), Vector2(6.2000, -0.6000), Vector2(8.4000, -1.0000), Vector2(10.2000, -1.2000), Vector2(12.2000, -1.4000), Vector2(14.4000, -1.4000), Vector2(16.4000, -1.8000), Vector2(18.4000, -1.8000), Vector2(20.4000, -2.0000), Vector2(22.4000, -2.2000), Vector2(24.4000, -2.6000), Vector2(26.6000, -2.8000), Vector2(28.2000, -3.2000), Vector2(30.2000, -2.8000), Vector2(28.8000, -8.2000), Vector2(27.2000, -13.8000), Vector2(26.0000, -18.6000), Vector2(24.4000, -24.2000), Vector2(23.2000, -29.4000), Vector2(21.6000, -35.0000), Vector2(20.2000, -40.6000), Vector2(17.4000, -35.0000), Vector2(14.4000, -29.0000), Vector2(11.6000, -23.4000), Vector2(8.8000, -17.4000), Vector2(5.8000, -11.6000), Vector2(2.8000, -5.8000), Vector2(0.0000, 0.0000)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1-761_leg2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(1.0000, 1.0000), Vector2(0.9984, 1.0016), Vector2(0.9968, 1.0032), Vector2(0.9953, 1.0047), Vector2(0.9943, 1.0057), Vector2(0.9932, 1.0068), Vector2(0.9924, 1.0076), Vector2(0.9918, 1.0082), Vector2(0.9914, 1.0086), Vector2(0.9912, 1.0088), Vector2(0.9912, 1.0088), Vector2(0.9915, 1.0085), Vector2(0.9920, 1.0080), Vector2(0.9925, 1.0075), Vector2(0.9934, 1.0066), Vector2(0.9943, 1.0057), Vector2(0.9934, 1.0066), Vector2(0.9925, 1.0075), Vector2(0.9919, 1.0081), Vector2(0.9915, 1.0085), Vector2(0.9913, 1.0087), Vector2(0.9913, 1.0087), Vector2(0.9916, 1.0084), Vector2(0.9921, 1.0079), Vector2(0.9929, 1.0071), Vector2(0.9939, 1.0061), Vector2(0.9950, 1.0050), Vector2(0.9965, 1.0035), Vector2(0.9981, 1.0019), Vector2(1.0000, 1.0000)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1-761_leg2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [0.0000, -0.0199, -0.0402, -0.0606, -0.0779, -0.0983, -0.1188, -0.1362, -0.1567, -0.1742, -0.1916, -0.2122, -0.2327, -0.2501, -0.2707, -0.2914, -0.2704, -0.2496, -0.2289, -0.2080, -0.1872, -0.1696, -0.1480, -0.1277, -0.1068, -0.0859, -0.0650, -0.0442, -0.0235, -0.0000]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("7-761_leg1:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(0.0000, 0.0000), Vector2(-2.0000, -4.8000), Vector2(-3.8000, -10.0000), Vector2(-5.6000, -14.8000), Vector2(-7.6000, -19.4000), Vector2(-9.4000, -24.4000), Vector2(-11.4000, -29.6000), Vector2(-13.0000, -33.8000), Vector2(-15.0000, -29.8000), Vector2(-16.8000, -26.4000), Vector2(-19.0000, -22.4000), Vector2(-20.6000, -18.8000), Vector2(-22.6000, -15.0000), Vector2(-24.6000, -11.2000), Vector2(-26.2000, -7.4000), Vector2(-28.4000, -4.0000), Vector2(-26.6000, -3.8000), Vector2(-24.4000, -3.6000), Vector2(-22.4000, -3.0000), Vector2(-20.6000, -2.8000), Vector2(-18.4000, -2.4000), Vector2(-16.4000, -2.2000), Vector2(-14.2000, -1.8000), Vector2(-12.2000, -1.6000), Vector2(-10.4000, -1.2000), Vector2(-8.2000, -1.2000), Vector2(-6.0000, -0.4000), Vector2(-3.8000, -0.4000), Vector2(-2.0000, 0.0000), Vector2(0.0000, 0.0000)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("7-761_leg1:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [Vector2(1.0000, 1.0000), Vector2(0.9989, 1.0011), Vector2(0.9981, 1.0019), Vector2(0.9972, 1.0028), Vector2(0.9967, 1.0033), Vector2(0.9963, 1.0037), Vector2(0.9961, 1.0039), Vector2(0.9960, 1.0040), Vector2(0.9962, 1.0038), Vector2(0.9966, 1.0034), Vector2(0.9970, 1.0030), Vector2(0.9977, 1.0023), Vector2(0.9984, 1.0016), Vector2(0.9994, 1.0006), Vector2(1.0007, 0.9993), Vector2(1.0017, 0.9983), Vector2(1.0004, 0.9996), Vector2(0.9994, 1.0006), Vector2(0.9983, 1.0017), Vector2(0.9974, 1.0026), Vector2(0.9969, 1.0031), Vector2(0.9964, 1.0036), Vector2(0.9962, 1.0038), Vector2(0.9961, 1.0039), Vector2(0.9963, 1.0037), Vector2(0.9967, 1.0033), Vector2(0.9973, 1.0027), Vector2(0.9979, 1.0021), Vector2(0.9989, 1.0011), Vector2(1.0000, 1.0000)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("7-761_leg1:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+    "times": PackedFloat32Array(0.0, 0.025, 0.05, 0.07500000000000001, 0.1, 0.125, 0.15000000000000002, 0.17500000000000002, 0.2, 0.225, 0.25, 0.275, 0.30000000000000004, 0.325, 0.35000000000000003, 0.375, 0.4, 0.42500000000000004, 0.45, 0.47500000000000003, 0.5, 0.525, 0.55, 0.5750000000000001, 0.6000000000000001, 0.625, 0.65, 0.675, 0.7000000000000001, 0.7250000000000001),
+    "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+    "update": 0,
+    "values": [0.0000, 0.0204, 0.0375, 0.0578, 0.0750, 0.0953, 0.1125, 0.1304, 0.1466, 0.1635, 0.1803, 0.1972, 0.2140, 0.2308, 0.2506, 0.2681, 0.2470, 0.2298, 0.2094, 0.1890, 0.1716, 0.1512, 0.1338, 0.1133, 0.0960, 0.0787, 0.0582, 0.0410, 0.0206, -0.0000]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nnbex"]
+_data = { "generated": SubResource("Animation_h5bcc") }
+
+[node name="764" type="Node2D" ]
+
+[node name="1-761_leg2" type="Node2D" parent="."]
+position = Vector2(0.0, 0.0)
+
+[node name="1-759_pant_leg2" type="Sprite2D" parent="1-761_leg2"]
+material = SubResource("ShaderMaterial_5h9ds")
+position = Vector2(-52.5, 120.4)
+texture = ExtResource("1_7x4g0")
+
+[node name="3-760_leg2" type="Sprite2D" parent="1-761_leg2"]
+position = Vector2(-58.0, 81.6)
+texture = ExtResource("3_faa9x")
+
+[node name="6-762" type="Sprite2D" parent="."]
+position = Vector2(-15.2, 27.9)
+texture = ExtResource("4_pelhg")
+
+[node name="7-761_leg1" type="Node2D" parent="."]
+position = Vector2(0.0, 0.0)
+
+[node name="1-759_pant_leg1" type="Sprite2D" parent="7-761_leg1"]
+material = SubResource("ShaderMaterial_dg7y1")
+position = Vector2(25.2, 131.9)
+texture = ExtResource("5_r027o")
+
+[node name="3-760_leg1" type="Sprite2D" parent="7-761_leg1"]
+position = Vector2(8.5, 96.5)
+texture = ExtResource("7_2864j")
+
+[node name="11-763" type="Sprite2D" parent="."]
+position = Vector2(-18.1, -11.8)
+texture = ExtResource("8_w5bl3")
+
+[node name="12-51" type="Sprite2D" parent="."]
+position = Vector2(-22.6, -28.2)
+texture = ExtResource("9_yohsb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = { "": SubResource("AnimationLibrary_nnbex") }
+

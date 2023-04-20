@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://jttkn7qfp9maw"]
+
+[ext_resource type="Texture2D" uid="uid://jaaotv6pbi5dq" path="res://bodies/668/1-667.png" id="1_2uy0n"]
+[ext_resource type="Texture2D" uid="uid://x88npscu0994p" path="res://bodies/668/2-603.png" id="2_y1mcd"]
+
+[node name="668" type="Node2D" ]
+
+[node name="1-667" type="Sprite2D" parent="."]
+position = Vector2(21.7, -67.6)
+texture = ExtResource("1_2uy0n")
+
+[node name="2-603" type="Sprite2D" parent="."]
+position = Vector2(19.6, -186.6)
+texture = ExtResource("2_y1mcd")
+
